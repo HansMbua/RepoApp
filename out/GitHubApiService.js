@@ -26,20 +26,25 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.GitHubApiService = void 0;
 const request = __importStar(require("request"));
 const user_1 = require("./user");
+const Repo_1 = require("./Repo");
+const OPTIONS = {
+    headers: {
+        'User-Agent': 'request'
+    },
+    json: true
+};
 class GitHubApiService {
     getUserInfo(userName, cb) {
-        let options = {
-            headers: {
-                'User-Agent': 'request'
-            },
-            json: true
-        };
-        request.get('https://api.github.com/users/' + userName, options, (error, response, body) => {
+        request.get('https://api.github.com/users/' + userName, OPTIONS, (error, response, body) => {
             let theUser = new user_1.User(body);
             cb(theUser);
         });
     }
-    getRepos(userName) {
+    getRepos(userName, cb) {
+        request.get('https://api.github.com/users/' + userName + '/repos', OPTIONS, (error, response, body) => {
+            let repos = body.map((repo) => new Repo_1.Repo(repo));
+            cb(repos);
+        });
     }
 }
 exports.GitHubApiService = GitHubApiService;
