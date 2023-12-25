@@ -1,0 +1,73 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.7",
+  "deps": {
+    "lodash": "^4.17.21",
+    "request": "^2.88.2",
+    "@types/lodash": "^4.14.202",
+    "@types/request": "^2.48.12"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".idea/.gitignore",
+        "hash": "16259663310133185705"
+      },
+      {
+        "file": ".idea/RepoApp.iml",
+        "hash": "17628044544001142833"
+      },
+      {
+        "file": ".idea/aws.xml",
+        "hash": "17199586338939744656"
+      },
+      {
+        "file": ".idea/modules.xml",
+        "hash": "4392046434609277753"
+      },
+      {
+        "file": ".idea/vcs.xml",
+        "hash": "13076890194361308264"
+      },
+      {
+        "file": "README.md",
+        "hash": "14672854853547056573"
+      },
+      {
+        "file": "out/index.js",
+        "hash": "1205276733364593033"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "15581054924767035754"
+      },
+      {
+        "file": "package.json",
+        "hash": "1907016327316327951"
+      },
+      {
+        "file": "src/GitHubApiService.ts",
+        "hash": "11599520632652177432"
+      },
+      {
+        "file": "src/Repo.ts",
+        "hash": "1617488093931764587"
+      },
+      {
+        "file": "src/index.ts",
+        "hash": "3738186948427406448"
+      },
+      {
+        "file": "src/user.ts",
+        "hash": "15791957863721574282"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "9720285187776149274"
+      }
+    ]
+  }
+}
